@@ -10,13 +10,16 @@ import java.io.Serializable;
 @Getter
 @Setter
 @Entity
-@Table(name = "forma_pagamento")
-public class FormaPagamento implements Serializable {
+@Table(name = "tabela_categoria")
+public class Categoria implements Serializable {
 
     @EqualsAndHashCode.Include
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(length = 120)
+    private String nome;
 
     private String descricao;
 }
