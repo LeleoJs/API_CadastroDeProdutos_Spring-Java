@@ -7,5 +7,5 @@
 > Esse projeto consiste em uma API desenvolvida em Java por meio do Framework Spring. A API permite enviar, receber, editar e deletar produtos e categorias de produtos. O banco de dados utilizado para armazenar o conteúdo é o PostgreSQL.
 
 ## Segue o diagrama da modelagem do banco de dados do sistema:
-![Trabalho2 drawio](https://user-images.githubusercontent.com/42273570/205195766-5e7eaab0-8926-4d3d-9743-7bc1643897b1.png)
+![Trabalho2 drawio](https://user-images.githubusercontent.com/42273570/205200730-6b48ca29-dbad-4312-a2ec-81cddc6113f0.png)
 
