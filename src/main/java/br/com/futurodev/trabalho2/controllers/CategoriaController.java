@@ -30,7 +30,12 @@ public class CategoriaController {
     @ResponseBody
     public ResponseEntity<String> delete(@RequestParam Long idCategoria){
         categoriaRepository.deleteById(idCategoria);
-        return new ResponseEntity<String>("Usuário deletado com sucesso!",HttpStatus.OK);
+        return new ResponseEntity<String>("Classe deletada com sucesso!",HttpStatus.OK);
     }
 
+    @GetMapping(value="/{idCategoria}", produces = "application/json")
+    public ResponseEntity<Categoria>getCategoryById(@PathVariable(value = "idCategoria") Long idCategoria){
+        Categoria cate = categoriaRepository.findById(idCategoria).get();
+        return new ResponseEntity<Categoria>(cate, HttpStatus.OK);
+    }
 }
